@@ -1,0 +1,32 @@
+.addButton {
+  background-color: var(--gold);
+  border: none;
+  width: 100%;
+  border-radius: 6px;
+  padding: 0.4rem 0;
+}
+
+.removeButton {
+  background-color: var(--black);
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  border-radius: 6px;
+  padding: 0.2rem 0.6rem;
+}
+
+.quantityButton {
+  background-color: var(--gold);
+  border: none;
+  border-radius: 6px;
+  padding: 0.2rem 0.6rem;
+}
+
+.addButton:hover,
+.quantityButton:hover {
+  background-color: var(--gold-dark);
+}
+
+.removeButton:hover {
+  background-color: var(--gold);
+  color: var(--black);
+}

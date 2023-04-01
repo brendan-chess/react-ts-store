@@ -1,58 +1,48 @@
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { useCart } from "../context/CartContext";
+import styles from "../styles/Navigation.module.css";
 
 export function Navigation() {
   const { openCart, cartSize } = useCart();
 
   return (
-    <Navbar sticky="top" className="bg-white shadow-sm mb-3">
+    <Navbar
+      sticky="top"
+      expand="md"
+      className={styles.navbar + " mb-4"}
+      collapseOnSelect={true}
+    >
       <Container>
-        <Nav className="me-auto">
-          <Nav.Link as={NavLink} to="/">
-            Home
-          </Nav.Link>
-          <Nav.Link as={NavLink} to="/store">
-            Store
-          </Nav.Link>
-          <Nav.Link as={NavLink} to="/about">
-            About
-          </Nav.Link>
-        </Nav>
-        <Button
-          onClick={openCart}
-          style={{ width: "3rem", height: "3rem", position: "relative" }}
-          variant="outline-primary"
-          className="rounded-circle"
-        >
-          <svg
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M4.78571 5H18.2251C19.5903 5 20.5542 6.33739 20.1225 7.63246L18.4558 12.6325C18.1836 13.4491 17.4193 14 16.5585 14H6.07142M4.78571 5L4.74531 4.71716C4.60455 3.73186 3.76071 3 2.76541 3H2M4.78571 5L6.07142 14M6.07142 14L6.25469 15.2828C6.39545 16.2681 7.23929 17 8.23459 17H17M17 17C15.8954 17 15 17.8954 15 19C15 20.1046 15.8954 21 17 21C18.1046 21 19 20.1046 19 19C19 17.8954 18.1046 17 17 17ZM11 19C11 20.1046 10.1046 21 9 21C7.89543 21 7 20.1046 7 19C7 17.8954 7.89543 17 9 17C10.1046 17 11 17.8954 11 19Z"
-              stroke="none"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-          <div
-            className="rounded-circle bg-danger d-flex justify-content-center align-items-center"
-            style={{
-              width: "1.5rem",
-              height: "1.5rem",
-              color: "white",
-              position: "absolute",
-              bottom: 0,
-              right: 0,
-              transform: "translate(25%, 25%)",
-            }}
-          >
+        <Navbar.Brand as={NavLink} to="/">
+          <span style={{ fontFamily: "Sedgwick Ave" }}>Roast & Toast</span>
+        </Navbar.Brand>
+        <Navbar.Toggle style={{ backgroundColor: "var(--gold)" }} />
+        <Navbar.Collapse>
+          <Nav className="me-auto">
+            <Nav.Link as={NavLink} to="/">
+              <span>Home</span>
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/store">
+              <span>Menu</span>
+            </Nav.Link>
+          </Nav>
+          <button className={styles.cart} onClick={openCart}>
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M14.3999 3.2C14.8417 2.86863 15.4685 2.95817 15.7999 3.4L18.4999 7H18.5031C20.3417 7 21.7478 8.6389 21.4682 10.4562L20.3913 17.4562C20.1661 18.9197 18.9069 20 17.4261 20H6.57366C5.09295 20 3.8337 18.9197 3.60855 17.4562L2.53162 10.4562C2.25204 8.63889 3.65808 7 5.49674 7H5.4999L8.1999 3.4C8.53127 2.95817 9.15808 2.86863 9.5999 3.2C10.0417 3.53137 10.1313 4.15817 9.7999 4.6L7.9999 7H15.9999L14.1999 4.6C13.8685 4.15817 13.9581 3.53137 14.3999 3.2ZM5.98825 9C5.99551 9.00008 6.00277 9.00008 6.01002 9H17.9898H18.0116H18.5031C19.116 9 19.5846 9.5463 19.4914 10.1521L18.4145 17.1521C18.3395 17.6399 17.9197 18 17.4261 18H6.57366C6.08009 18 5.66034 17.6399 5.58529 17.1521L4.50837 10.1521C4.41517 9.5463 4.88385 9 5.49674 9H5.98825Z"
+                fill="currentColor"
+              />
+            </svg>
             {cartSize}
-          </div>
-        </Button>
+          </button>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );

@@ -1,0 +1,21 @@
+.image {
+  width: 5rem;
+  height: 3rem;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.accent {
+  color: var(--gold);
+}
+
+.remove {
+  border: none;
+  background-color: var(--black);
+  color: var(--gold);
+  padding: 0 0.5rem 0.15rem;
+}
+
+.remove:hover {
+  color: var(--gold-dark);
+}

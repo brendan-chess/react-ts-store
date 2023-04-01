@@ -1,0 +1,31 @@
+.navbar {
+  background-color: var(--black);
+  border-bottom: 1px solid var(--gold);
+}
+
+.navbar span {
+  color: var(--gold);
+}
+
+.cart {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 3.5rem;
+  height: 2rem;
+  background-color: var(--black);
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  border-radius: 6px;
+}
+
+.cart svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.cart:hover {
+  background-color: var(--gold);
+  color: var(--black);
+}

@@ -1,20 +1,72 @@
 [
   {
     "id": 1,
-    "name": "Coffee",
-    "price": 3.99,
-    "imageUrl": "/images/coffee.jpg"
+    "name": "Espresso",
+    "description": "A shot of rich, bold espresso",
+    "price": 2.5,
+    "imageUrl": "images/espresso.jpg"
   },
   {
     "id": 2,
-    "name": "Bagel",
-    "price": 4.99,
-    "imageUrl": "/images/bagel.jpg"
+    "name": "Americano",
+    "description": "Espresso shots with hot water",
+    "price": 3.0,
+    "imageUrl": "images/americano.jpg"
   },
   {
     "id": 3,
-    "name": "Waffle",
-    "price": 6.99,
-    "imageUrl": "/images/waffle.jpg"
+    "name": "Latte",
+    "description": "Espresso with steamed milk and foam",
+    "price": 4.0,
+    "imageUrl": "images/latte.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Cappuccino",
+    "description": "Espresso with steamed milk and foam",
+    "price": 4.0,
+    "imageUrl": "images/cappuccino.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Mocha",
+    "description": "Espresso with chocolate and steamed milk",
+    "price": 4.5,
+    "imageUrl": "images/mocha.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Iced Coffee",
+    "description": "Chilled coffee with ice",
+    "price": 3.5,
+    "imageUrl": "images/iced-coffee.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Cold Brew",
+    "description": "Smooth and refreshing cold brewed coffee",
+    "price": 4.0,
+    "imageUrl": "images/cold-brew.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Chai Latte",
+    "description": "Black tea with spices and steamed milk",
+    "price": 4.5,
+    "imageUrl": "images/chai-latte.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Hot Chocolate",
+    "description": "Rich and creamy chocolate drink",
+    "price": 4.0,
+    "imageUrl": "images/hot-chocolate.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Tea",
+    "description": "Assorted teas and herbal infusions",
+    "price": 3.5,
+    "imageUrl": "images/tea.jpg"
   }
 ]

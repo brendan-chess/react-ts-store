@@ -1,0 +1,12 @@
+:root {
+  --gold: #e6ab52;
+  --gold-dark: #af823e;
+  --black: #111111;
+  --white: #f9f3ea;
+}
+
+body {
+  font-family: Itim;
+  background-color: var(--black);
+  color: var(--white);
+}

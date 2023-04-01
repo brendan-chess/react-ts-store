@@ -1,0 +1,10 @@
+.header {
+  background-color: var(--black);
+  color: var(--gold);
+  border-bottom: 1px solid var(--gold);
+}
+
+.body {
+  background-color: var(--black);
+  color: var(--white);
+}
